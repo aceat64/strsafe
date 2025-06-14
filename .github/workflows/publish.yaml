@@ -2,6 +2,7 @@ name: Publish Package
 
 on:
   release:
+    types: [published]
 
 jobs:
   ci:
@@ -10,6 +11,7 @@ jobs:
 
   build:
     name: Build distribution
+    needs: [ci]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
