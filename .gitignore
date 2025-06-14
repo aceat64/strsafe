@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.venv/
+.coverage
+htmlcov/
+dist/
+
+# Ignore these since this is a library
+uv.lock
+.python-version
